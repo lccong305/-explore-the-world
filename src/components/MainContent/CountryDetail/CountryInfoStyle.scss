@@ -1,0 +1,44 @@
+.country-info {
+    &__name {
+        font-size: 20px;
+        color: #000;
+        font-weight: bold;
+        padding-bottom: 8px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 18px;
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+    }
+
+    &__value {
+        font-weight: 400;
+        &-item {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            span {
+                display: inline-block;
+                padding: 3px 8px;
+                box-shadow: var(--boxShadow);
+                border-radius: 4px;
+                font-size: 16px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                user-select: none;
+            }
+        }
+    }
+}
